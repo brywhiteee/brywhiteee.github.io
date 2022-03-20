@@ -1,0 +1,112 @@
+
+body{
+	background-color: #99795c;
+
+
+}
+
+body,html{
+  width: 100%;
+  font: .9em/1.2 "Lucida Console", "Courier New", monospace;
+  font-size: 15px;
+}
+
+
+.wrapper {
+  display: flex; 
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.wrapper2{
+  position: fixed; 
+  top: 105px;
+  left: 10px;
+  border: solid;
+  background-color: white;
+  padding: 20px;
+  color: black;
+}
+
+
+.header {
+  background: white;
+  padding: 5vw;
+  text-align: center;
+  border-color: black;
+  border-radius: 30vw;
+}
+
+
+
+
+
+.box{
+	float:left;
+	height: 600px;
+	width: 400px;
+	background: #d1c98e;
+	padding-bottom: 10px;
+	padding-left: 5vw;
+	border-radius: 30vw;
+	
+}
+
+.box2{
+	float:right;
+	text-align:center;
+	height: 250px;
+	width: 600px;
+	background: #5b8f69;
+	padding-bottom: 10px;
+	top: 10px;	
+	border-radius: 30vw;
+	padding-bottom: 10px;
+}
+
+
+#flexbox {
+    background: #f5d57d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100px;     
+    border-style: solid;
+}
+
+.footer{
+	padding-top: 10px;
+	
+}
+
+.button {
+  background-color: #f5d57d;
+  border: none;
+  color: none;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #99795c; 
+  color: black; 
+  border: 2px solid black;
+}
+
+.button:hover {
+  background-color: #f5d57d;
+  color: white;
+}
+
+
