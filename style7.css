@@ -1,0 +1,141 @@
+body,html{
+	background: #333;
+	text-align: center;
+	width: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    color: white;
+
+}
+
+#content{
+	height:100px;
+}
+
+#content h1{
+	font-size: 50px;
+	line-height: 1em;
+	position: relative;
+	animation-name: heading;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-duration: 3s;
+	
+}
+
+
+
+.box{
+	background-image: url(https://miro.medium.com/max/950/1*tF-5plGABIvJ6rEakdsv_A.jpeg);
+	float: right;
+    height: 500px;
+    margin-right: 13em;
+    width: 450px;
+	position: relative;
+	transition-property: background;
+	transition-duration: 1s;
+	
+
+}
+
+.box2{
+	background-image: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1352673444l/1935721.jpg);
+	width: 400px;
+	height: 500px;
+	position: relative;
+	margin: auto;
+	margin-left:13em;
+	transition-property: background;
+	transition-duration: 3s;
+}
+
+
+.box:hover{
+	background: white;
+	opacity: 1em;
+	
+}
+
+.box2:hover{
+	background: white;
+	
+}
+
+.footer{
+  position: fixed; 
+  top: 105px;
+  align-self: center;
+  border: solid;
+  background-color: white;
+  padding: 20px;
+  color: black;
+}
+
+.footer2{
+  bottom: 150px;
+  left: 10px;
+  border: solid;
+  background-color: white;
+  padding: 20px;
+  }
+
+.wrapper{
+	display:grid;
+	grid-template-columns: 60% 30%;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+
+}
+
+.wrapper > div{
+	padding:1em;
+}
+.wrapper > div:nth-child(odd){
+	background: black;
+}
+
+p {
+  animation: 4s  alternate slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+@keyframes heading {
+	from {
+    margin-left: 75%;
+    width: 50%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 50%;
+  }
+}
+
+.button {
+  background-color: #333;
+  border: solid;
+  color: none;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 24px;
+  margin: 6px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: white;
+}
+	
