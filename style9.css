@@ -2,7 +2,15 @@ body {
     background-color: #d1b07d;
 }
 
+body,html{
+  width: 100%;
+  font: .9em/1.2 "Lucida Console", "Courier New", bold,
+  font-size: 20px;
+}
 
+.banner {
+	display: center;
+}
 
 div img{
     height: 40vw;
