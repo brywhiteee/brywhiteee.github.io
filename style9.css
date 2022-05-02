@@ -4,7 +4,7 @@ body {
 
 body,html{
   width: 100%;
-  font: .9em/1.2 "Lucida Console", "Courier New", bold,
+  font: .9em/1.2 "Lucida Console", "Courier New", bold;
   font-size: 30px;
 }
 
