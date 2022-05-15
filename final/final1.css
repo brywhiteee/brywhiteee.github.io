@@ -1,0 +1,278 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background: black;
+	overflow: hidden;	
+
+}
+
+.wrapper{
+  position: fixed; 
+  top: 85px;
+  left: 10px;
+  border: solid;
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+.wrapper:hover{
+	background: white;
+	width:85px;
+	height: 15px;
+
+}
+
+.footer{
+  position: fixed; 
+  bottom: 350px;
+  left: 10px;
+  border: solid;
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+.button{
+  
+  background-color: black;
+  border: none;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+.pulse
+{
+	position: absolute;
+	margin-left: 300px;
+	top: 40px;
+	width: 200px;
+	height:200px;
+	background: #FF6E5C;
+	border-radius: 50%;
+	animation: animate 2s linear infinite;
+	
+}
+
+.pulse:hover{
+	width: 250px;
+	height: 250px;
+	opacity: 2em;
+}
+
+.pulse2{
+	
+	position: absolute;
+	bottom: 40px;
+	width: 200px;
+	height:200px;
+	background: #A27400;
+	border-radius: 50%;
+	animation: moving 3s infinite;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+}
+
+.pulse2:hover{
+	width: 350px;
+	opacity: 2em;
+}
+
+.pulse3{
+
+	position: absolute;
+	margin-left: 600px;
+	top: 40px;
+	width: 200px;
+	height:200px;
+	background: #D0E4FF;
+	border-radius: 50%;
+	animation: slide 6s infinite;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+	animation-direction: alternate;
+	
+}
+
+.pulse3:hover{
+	background: white;
+	height: 250px;
+	opacity: 2em;
+}
+
+.pulse4{
+
+	position: absolute;
+	margin-left: 160px;
+	top: 40px;
+	width: 200px;
+	height:200px;
+	background: #a5e376;
+	border-radius: 50%;
+	animation: rapid 1s infinite;
+}
+
+
+
+@keyframes animate
+{
+
+
+	0%
+	{
+		left:0px;
+		top:0px;
+	}
+
+	25%
+	{
+		left:400px;
+		top:0px;
+
+	}
+
+	50%
+	{
+		left:400px;
+		top:400px;
+	}
+
+	75%
+	{
+		left:0px;
+		top:400px;
+	}
+
+	100%
+	{
+		left:0px;
+		top:0px;
+	}
+
+	0%
+	{
+		box-shadow: 0 0 0 50px rgba(255, 110, 92, 4);
+	}
+	40%
+	{
+		box-shadow: 0 0 0 0 rgba(255, 110, 92, 0);
+	}
+	80%
+	{
+		box-shadow: 0 0 0 0 rgba(255, 110, 92, 4);
+	}
+	100%
+	{
+		box-shadow: 0 0 0 0 rgba(255, 110, 92, 0);
+	}
+}
+
+@keyframes moving{
+  from {
+    margin-left: 84%;
+    
+   
+  }
+
+  to {
+    margin-right: 0%;
+
+  
+  }
+
+  0%
+	{
+		box-shadow: 0 0 0 0 rgba(162, 116, 0, .6);
+	}
+	40%
+	{
+		box-shadow: 0 0 0 50px rgba(162, 116, 0, 0);
+	}
+	80%
+	{
+		box-shadow: 0 0 0 0 rgba(162, 116, 0, .6);
+	}
+	100%
+	{
+		box-shadow: 0 0 0 50px rgba(162, 116, 0, 0);
+	}
+}
+
+@keyframes slide {
+	0%
+	{
+		left:0px;
+		top:0px;
+	}
+
+	25%
+	{
+		left:500px;
+		top:0px;
+
+	}
+
+	50%
+	{
+		left:500px;
+		top:500px;
+	}
+
+	75%
+	{
+		left:0px;
+		top:500px;
+	}
+
+	100%
+	{
+		left:0px;
+		top:0px;
+	}
+
+    0%
+	{
+		box-shadow: 0 0 0 0 rgba(208, 228, 255, .6);
+	}
+	40%
+	{
+		box-shadow: 0 0 0 50px rgba(208, 228, 255, 0);
+	}
+	80%
+	{
+		box-shadow: 0 0 0 0 rgba(208, 228, 255, .6);
+	}
+	100%
+	{
+		box-shadow: 0 0 0 50px rgba(208, 228, 255, 0);
+	}
+
+}
+
+@keyframes rapid {
+
+	0%
+	{
+		box-shadow: 0 0 0 0 rgba(165, 227, 118, .6);
+	}
+	40%
+	{
+		box-shadow: 0 0 0 50px rgba(165, 227, 118, 0);
+	}
+	80%
+	{
+		box-shadow: 0 0 0 0 rgba(165, 227, 118, .6);
+	}
+	100%
+	{
+		box-shadow: 0 0 0 50px rgba(165, 227, 118, 0);
+	}
+
+}
