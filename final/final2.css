@@ -1,0 +1,169 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background: black;
+	overflow: hidden;
+}
+
+.wrapper{
+  position: fixed; 
+  top: 85px;
+  right:30px;
+  width:75px;
+  height: 10px;
+  border: solid;
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+.audio{
+	outline-color: black;
+	margin-left: 960px;
+}
+
+.wrapper:hover{
+	background: white;
+	width:85px;
+	height: 15px;
+
+}
+
+.button{
+  
+  background-color: black;
+  border: none;
+  color: white;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+.footer{
+  position: fixed; 
+  bottom: 350px;
+  right: 30px;
+  border: solid;
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+.pulse{
+    position: relative;
+	margin: 300px;
+	top: 40px;
+	width: 200px;
+	height:200px;
+	background: #FFBB5C;
+	border-radius: 50%;
+	animation: slow 3s infinite;
+
+}
+
+.pulse:hover{
+	width: 400px;
+	height: 400px;
+}
+
+.pulse2{
+	position: absolute;
+	margin-left: 100px;
+	top: 40px;
+	width: 200px;
+	height:200px;
+	background: #fcc7ec;
+	border-radius: 50%;
+	animation: slows 3s infinite;
+	}
+
+	.pulse2:hover{
+		width: 100px;
+		height: 100px;
+	}
+
+.pulse3{
+	position: absolute;
+	margin-left: 500px;
+	top: 40px;
+	width: 200px;
+	height:200px;
+	background: #bcebe2;
+	border-radius: 50%;
+    animation: slowing 3s infinite;
+}
+
+.pulse3:hover{
+	width: 300px;
+	height:300px;
+}
+
+@keyframes slow
+{
+
+
+	0%
+	{
+		box-shadow: 0 0 0 30px rgba(255, 187, 92, .7);
+	}
+	40%
+	{
+		box-shadow: 0 0 0 20px rgba(255, 187, 92, .3);
+	}
+	80%
+	{
+		box-shadow: 0 0 0 20px rgba(255, 187, 92, .1);
+	}
+	100%
+	{
+		box-shadow: 0 0 0 20px rgba(255, 187, 92, 0);
+	}
+}
+
+@keyframes slows
+{
+
+
+	0%
+	{
+		box-shadow: 0 0 0 0 rgba(252, 199, 236, .7);
+	}
+	40%
+	{
+		box-shadow: 0 0 0 20px rgba(252, 199, 236, .3);
+	}
+	80%
+	{
+		box-shadow: 0 0 0 20px rgba(252, 199, 236, .1);
+	}
+	100%
+	{
+		box-shadow: 0 0 0 30px rgba(252, 199, 236, 0);
+	}
+}
+
+@keyframes slowing
+{
+
+
+	0%
+	{
+		box-shadow: 0 0 0 0 rgba(188, 235, 226, .7);
+	}
+	40%
+	{
+		box-shadow: 0 0 0 20px rgba(188, 235, 226, .5);
+	}
+	80%
+	{
+		box-shadow: 0 0 0 30px rgba(188, 235, 226, .4);
+	}
+	100%
+	{
+		box-shadow: 0 0 0 30px rgba(188, 235, 226, 0);
+	}
+}
