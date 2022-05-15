@@ -25,6 +25,11 @@ body
 
 }
 
+.audio{
+	outline-color: black;
+	margin-top: 600px;
+}
+
 .footer{
   position: fixed; 
   bottom: 350px;
