@@ -1,0 +1,178 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background: black;
+	overflow: hidden;
+}
+
+
+.center
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.wrapper{
+  position: fixed; 
+  top: 85px;
+  left: 20px;
+  border: solid;
+  background-color: black;
+  padding: 20px;
+  color: white;
+}
+
+.wrapper:hover{
+	background: white;
+}
+
+
+.wrapper2{
+	position: fixed;
+	top: 65px;
+	right:20px;
+	border: solid;
+    background-color: black;
+    padding: 20px;
+   color: white;
+}
+
+.wrapper2:hover{
+	background: white;
+}
+
+
+.pad{
+    position: relative;
+	top: 335px;
+	left: 480px;
+	width: 75px;
+	height:22px;
+	background-color: #282D1C;
+}
+
+.pad2{
+
+	position: relative;
+	top: 290px;
+	left: 505px;
+	width: 25px;
+	height:70px;
+	background-color: #282D1C;
+}
+
+
+.circle{
+	
+	position: relative;
+	top: 410px;
+	left: 710px;
+	width: 60px;
+	height:60px;
+	background: #993D31;
+	border-radius: 50%;
+}
+
+.circle:hover{
+	background: white;
+	opacity: 3em;
+	height: 70px;
+	width: 70px;
+
+}
+
+.circle2{
+	
+	position: relative;
+	top: 430px;
+	left: 687px;
+	width: 55px;
+	height: 55px;
+	background: #993D31;
+	border-radius: 50%;
+}
+
+.circle2:hover{
+	background: black;
+	opacity: 3em;
+	height: 70px;
+	width: 70px;
+
+}
+
+.square2{
+	display: flex;
+    justify-content: center;
+    margin-top: 10px;
+	width: 420px;
+	height:600px;
+	border-radius: 10%;
+	background-color: #6f756b;
+	
+
+}
+
+
+.square
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+	width: 350px;
+	height:350px;
+	border-radius: 10%;
+	background-color: #77805C;
+
+	
+} 
+
+
+.pulse
+{
+	position: relative;
+	top: 40px;
+	width: 200px;
+	height:200px;
+	background: #79c143;
+	border-radius: 50%;
+	animation: animate 5s linear infinite;
+	
+}
+
+.pulse2
+{
+	position: relative;
+	bottom:95px;
+	width: 100px;
+	height:100px;
+	background: #79c143;
+	border-radius: 50%;
+	animation: animate 5s linear infinite;
+	
+}
+
+
+@keyframes animate
+{
+	0%
+	{
+		box-shadow: 0 0 0 0 rgba(121, 193, 67, .7);
+	}
+	40%
+	{
+		box-shadow: 0 0 0 50px rgba(121, 193, 67, 0);
+	}
+	80%
+	{
+		box-shadow: 0 0 0 0 rgba(121, 193, 67, .7);
+	}
+	100%
+	{
+		box-shadow: 0 0 0 0 rgba(121, 193, 67, 0);
+	}
+}
