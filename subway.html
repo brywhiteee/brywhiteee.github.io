@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>subway</title>
+
+    <link rel="stylesheet" href="style.css">
+
+   <style>
+
+
+     img{
+     	
+       width:40%;
+       height: auto;
+     }
+
+
+  </style>
+</head>
+  
+ 
+<body>
+<input type="text" placeholder="What subway..." id="myInput">
+<button type= "button" button id="valueButton" type="button">Get Value</button>
+<div id="display">
+
+</div>
+<br>
+<div id="subways">
+
+</div>
+
+
+<script>
+  
+ document.getElementById('valueButton').addEventListener('click',getInputValue); 
+  
+	function getInputValue(){
+            // Selecting the input element and get its value 
+let inputVal = document.getElementById("myInput").value;
+            //Displaying the Value on the page
+            document.getElementById("display").innerHTML = "<br>" + inputVal ;
+    
+    let subway = inputVal;
+    
+    if(subway == '1' || subway == 'one'){
+      
+      //console.log('Summertime!');
+      
+  document.getElementById('subways').innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/3/34/MTA_NYC_Subway_1_train_leaving_125th_St.jpg">';
+      
+    }
+    
+    else if(subway =='2'|| subway == 'two'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://cdn.viewing.nyc/assets/media/8724162776c006aaaa0cab2cd34dcf08/elements/55c1de16c1cf0e30d87bc84b25fc1e00/582373a3-cd11-4736-bacf-800adbd4a5ed.jpg">';
+      
+      
+    }
+    
+        else if(subway =='3'|| subway == 'three'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/New_Lots_ShenanigansR62_%283%29_Train.jpg/1200px-New_Lots_ShenanigansR62_%283%29_Train.jpg">';
+      
+      
+    } else if(subway =='4'|| subway == 'four'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://www.amny.com/wp-content/uploads/2019/10/4_train_leaving_Harlem_on_August_night-e1572297481469.jpg">';
+ }
+
+ else if(subway =='5'|| subway == 'five'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/5_Train_R142.JPG">';
+    
+ }
+
+ else if(subway =='6'|| subway == 'six'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/MTA_NYC_Subway_6-express_train_passing_Elder_Ave.jpg/250px-MTA_NYC_Subway_6-express_train_passing_Elder_Ave.jpg">';
+    
+ }
+
+ else if(subway =='7'|| subway == 'seven'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://media.timeout.com/images/105964933/image.jpg">';
+    
+ }
+
+ else if(subway =='A' || subway == 'a'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://untappedcities.com/wp-content/uploads/2021/07/End-of-the-Line-A-Train-Subway-MTA-Rockaway-Park-Inwood-Queens-Manhattan-Untapped-New-York-NYC-3-1.jpg">';
+    
+ }
+
+ else if(subway =='B' || subway == 'b'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://www.amny.com/wp-content/uploads/2022/01/B-train.jpeg">';
+    
+ }
+
+ else if(subway =='C' || subway == 'c'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/R179_C_train_at_West_4th_Street.jpg">';
+    
+ }
+
+ else if(subway =='D' || subway == 'd'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://shorefrontnews.com/wp-content/uploads/2019/12/Train.jpg">';
+    
+ }
+
+ else if(subway =='E' || subway == 'e'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/R160_E_enters_42nd_Street.jpg">';
+    
+ }
+
+ else if(subway =='F' || subway == 'f'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://s3-prod.crainsnewyork.com/s3fs-public/BLOGS04_160519867_AR_-1_STFYVAUTRXQG.jpg">';
+    
+ }
+
+ else if(subway =='G' || subway == 'g'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://untappedcities.com/wp-content/uploads/2018/12/G-Train-Brooklyn-Queens-Smith-9th-Street-NYC.jpg">';
+    
+ }
+
+ else if(subway =='J' || subway == 'j'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://img.fotocommunity.com/manhattan-bound-j-train-arriving-myrtle-ave-3d8e98c0-3962-47f1-a454-bfef8fc4841a.jpg?width=1000">';
+    
+ }
+
+ else if(subway =='L' || subway == 'l'){
+      
+      document.getElementById('subways').innerHTML = '<img src="http://www.amny.com/wp-content/uploads/2019/10/1357_image.jpg">';
+    
+ }
+
+ else if(subway =='M' || subway == 'm'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://media.timeout.com/images/106003631/image.jpg">';
+    
+ }
+
+ else if(subway =='N' || subway == 'n'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://live.staticflickr.com/65535/49396873053_5c3f882a96_b.jpg">';
+    
+ }
+
+ else if(subway =='Q' || subway == 'q'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/R46_Q_train_leaving_Parkside_Avenue.jpg">';
+    
+ }
+
+ else if(subway =='R' || subway == 'r'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/R_Train_at_53rd.jpg">';
+    
+ }
+
+ else if(subway =='W' || subway == 'w'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/R46_W_train_at_30th_Avenue.jpg">';
+    
+ }
+
+ else if(subway =='Z' || subway == 'z'){
+      
+      document.getElementById('subways').innerHTML = '<img src="https://i.pinimg.com/originals/30/95/08/309508593eeb0567d539316489d6eecc.jpg">';
+    
+ }
+
+
+ else{
+ document.getElementById("display").innerHTML = "That's not a subway line" ;
+      document.getElementById('subways').innerHTML = '';
+   }
+        
+  }
+
+  
+</script>
+
+</body>
+</html>
+    
+    
+    
+
+  
+    
+  
+  
+  
+</html>
