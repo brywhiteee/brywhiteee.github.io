@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>french fries</title>
+
+    <link rel="stylesheet" href="style.css">
+
+   <style>
+
+
+     img{
+     	
+       width:40%;
+       height: auto;
+     }
+
+
+  </style>
+</head>
+  
+ 
+<body>
+
+  <h1> Think: Curly, Straight, etc...</h1>
+  <h2>There are currently 4 different styles</h2>
+<input class= "placeholder" type="text" placeholder="name a fry..." id="myInput">
+<button class= "buttonA" button id="valueButton" type="button">Get Value</button>
+<div id="display">
+
+</div>
+<br>
+<div id="fries">
+
+</div>
+
+
+<script>
+  
+ document.getElementById('valueButton').addEventListener('click',getInputValue); 
+  
+	function getInputValue(){
+            // Selecting the input element and get its value 
+let inputVal = document.getElementById("myInput").value;
+            //Displaying the Value on the page
+            document.getElementById("display").innerHTML = "<br>" + inputVal ;
+    
+    let fry = inputVal;
+    
+    if(fry == 'curly'){
+      
+      
+  document.getElementById('fries').innerHTML = '<img src="https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/unvgqjib/59184b83-6319-4b52-8cd8-97aafbf6fd21.jpg">';
+      
+    }
+    
+    else if(fry =='straight'){
+      
+      document.getElementById('fries').innerHTML = '<img src="https://www.usfoods.com/var/commerce/products/usfoods/74/74/747410/image.img.jpg/cq_ck_1695152929249.jpg">';
+    }
+
+    else if(fry=='crinkle'){
+      document.getElementById('fries').innerHTML = '<img src="https://www.tastingtable.com/img/gallery/the-gastronomic-purpose-of-crinkle-cut-fries/l-intro-1675189576.jpg">';
+    }
+
+    else if(fry=='sweet potato'){
+      document.getElementById('fries').innerHTML = '<img src="https://www.chewoutloud.com/wp-content/uploads/2023/01/Sweet-Potato-Fries-Horizontal.jpg">';
+    }
+
+    else if(fry=='waffle' || 'Waffle'){
+      document.getElementById('fries').innerHTML = '<img src="https://forktospoon.com/wp-content/uploads/2022/01/Air-Fryer-Frozen-Waffle-Cut-Fries.jpg">';
+    }
+}
+
+
+</script>
+
+<br>
+<br>
+<br>
+
+<a href="fries.html"><button class="button"> Home</button></a>
+
+</body>
+</html>
+    
+    
+    
+
+  
+    
+  
+  
+  
+</html>

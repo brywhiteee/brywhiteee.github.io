@@ -1,70 +1,130 @@
-
-body{
-      background-color: #dcedad
+body,html{
+	background: #333333;
+	text-align: center;
+	width: 100%;
+    font-family: 'Monospace', Monaco;
+    font-size: 15px;
+    color: white;
 
 }
 
-
-.wrapper{
-    display: grid;
-    grid-gap: 20px;
-   
- }
-
-.box {
-  display:;
-  width: 250px;
-  height: 40px;
-  border-radius: 50px;
-  background-color: #c0ede9;
-  padding: 2em;
-  margin: 0 auto;
+.footer{
+  position: absolute; 
+  top: 30px;
+  right: 180px;
+  left: 200px;
+  align-self: center;
+  border: solid;
+  background-color: rgb(40, 40, 118);
+  padding: 10px;
+  color: rgb(255, 255, 255);
 }
-  
 
-
- body,html{
- 	margin: 0;
- 	font-family: "Lucida Console", "Courier New", monospace;
- 	font-size: 14px
- }
-
-
-
- ul{
- 	padding: 0em;
- 	width: 100%;
- }
-
- li{
- 	display: inline;
- }
-
- a {
- 	 outline: double #7f9fad;
-  text-decoration: none;
-  display: inline-block;
-  width: 100%;
-  margin-right: 0.625%;
+.button{
+  background-color: #333;
+  border: solid;
+  color: none;
+  padding: 16px 32px;
   text-align: center;
-  line-height: 3;
-  color: black;
+  font-size: 24px;
+  margin: 6px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-li:last-child a {
-  margin-right: 0 auto;
+.button2,.button3,.button4{
+    background-color: #333;
+    display:inline-block;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 40px 40px;
+    cursor: pointer;
 }
 
-a:link, a:visited, a:focus {
-  background: #97c47c ;
-  
-}
-
-a:hover {
-  background: #c4ab7c;
-}
-
-a:active {
-  background: #9CAF88 ;
+.button5{
+    background-color: #333;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1% 36.9%;
   color: white;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 40px 40px;
+    cursor: pointer;
 }
+
+.button6{
+    background-color: #333;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1% 45%;
+  color: white;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 40px 40px;
+    cursor: pointer;
+}
+
+.button7{
+    background-color: #333;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1% 55%;
+  color: white;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 40px 40px;
+    cursor: pointer;
+}
+
+
+.button:hover {
+    color: white;
+  }
+
+  .button2:hover{
+    color:white;
+    box-shadow: rgba(207, 209, 211, 0.25) 0px 4px 8px -2px, rgba(207, 209, 211, 0.25) 0px 0px 0px 1px;
+  }
+      
+  .button3:hover{
+    color:white;
+    box-shadow: rgba(207, 209, 211, 0.25) 0px 4px 8px -2px, rgba(207, 209, 211, 0.25) 0px 0px 0px 1px;
+  }
+      
+
+  .button4:hover{
+    color:white;
+    box-shadow: rgba(207, 209, 211, 0.25) 0px 4px 8px -2px, rgba(207, 209, 211, 0.25) 0px 0px 0px 1px;
+  }
+      
+
+#box{
+    background-color: black;
+    padding:20px;
+}
+
+.buttonA{
+    background-color:rgb(40, 118, 63);
+    border: solid;
+    padding: 10px 12px;
+  text-align: center;
+  font-size: 14px;
+  margin: 6px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+    
+}
+
+.buttonA:hover {
+    color: white;
+  }
+
+
+.placeholder{
+    background-color:rgb(237, 231, 231);
+    border: solid;
+    padding: 10px 12px;
+
+}
+
+
