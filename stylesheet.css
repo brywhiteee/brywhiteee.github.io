@@ -163,7 +163,7 @@ div::-webkit-scrollbar {
     width: 310px;
     position: fixed;
     top: 50px;
-    left: 60px;
+    left: 140px;
 }
 
 .rectangle2{
@@ -172,13 +172,13 @@ div::-webkit-scrollbar {
     width: 170px;
     position: fixed;
     bottom: 40px;
-    left: 115px;
+    left: 210px;
 }
 
 .rectangle3{
     background-color: rgb(240, 137, 137);
     height: 260px;
-    width: 400px;
+    width: 450px;
     position: fixed;
     top: 50px;
     right: 180px;
@@ -187,9 +187,9 @@ div::-webkit-scrollbar {
 .rectangle4{
     background-color: rgb(179, 165, 74);
     height: 160px ;
-    width: 370px;
+    width: 450px;
     position: fixed;
-    bottom: 80px;
-    right: 210px;
+    bottom: 103px;
+    right: 180px;
 
 }
