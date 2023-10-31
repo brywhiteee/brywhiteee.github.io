@@ -19,30 +19,31 @@ div::-webkit-scrollbar {
 }
 
 .square2{
-    background-color: rgb(117, 194, 245);
+   
+    background-image:url("https://comicvine.gamespot.com/a/uploads/original/2/24676/460213-t__12_.jpg");
     height: 240px;
     width: 290px;
     position: fixed;
-    right: 400px;
+    right: 500px;
     top: 40px;
 }
 
 .square3{
-    background-color: rgb(122, 209, 137);
+    background-image: url("https://i.pinimg.com/474x/f9/e9/03/f9e903b3a9b5743d928f3b78f7e1cff0.jpg");
     height: 240px;
     width: 290px;
     position: fixed;
-    right: 100px;
+    right: 150px;
     top: 40px;
 }
 
 .square4{
-    background-color: #a569e9;
+    background-image: url("https://1.bp.blogspot.com/-Q_RkNdVzFZc/WPzHoIzLeZI/AAAAAAAAELc/71VQQMth7gssdWx2lQ-ZTTBWtVEdnjAeACLcB/w1200-h630-p-k-no-nu/Super_Antics_12.jpg");
     height: 100px;
-    width: 589px;
+    width: 640px;
     position: fixed;
-    top: 290px;
-    left: 441px;
+    top: 295px;
+    left: 478px;
     
 }
 
@@ -123,6 +124,8 @@ div::-webkit-scrollbar {
     margin: 5 auto;
 }
 
+
+
 .slider2{
     display: flex;
     aspect-ratio: 23 / 25;
@@ -141,55 +144,154 @@ div::-webkit-scrollbar {
 
 .slider-wrapper3{
     position: relative;
-    max-width: 60rem;
+    max-width: 46rem;
     margin: 2 auto;
 }
 
 .slider3{
+    position: relative;
     display: flex;
-    aspect-ratio: 10 / 14;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+ 
+  
+   
 }
+
+.slider3{
+    animation: bannermove 20s linear infinite;
+  }
+  
+  @keyframes bannermove {
+     0% {
+      left: 0;
+    }
+    50% {
+      left: -100%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
 
 /* home page pic nav end */
 
 /*page 1 & 2*/
 
 .rectangle{
-    background-color: orange;
-    height: 460px;
-    width: 310px;
-    position: fixed;
-    top: 50px;
-    left: 140px;
+    background-color: rgb(34, 152, 152);
+    height: auto;
+  width: 70vw;
+  display: flex;
+  padding: 20px;
+
 }
 
-.rectangle2{
-    background-color: rgb(135, 195, 135);
-    height: 40px;
-    width: 170px;
-    position: fixed;
-    bottom: 40px;
-    left: 210px;
+.button{
+    background-color: bisque;
+  border: solid;
+
+  padding: 16px 32px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
+
+.button:hover {
+    color: white;
+  }
+
+  .button2{
+    background-color: #3c3b3b;
+  border: solid;
+  color: none;
+  padding: 16px 32px;
+  position: absolute;
+  bottom: 5%;
+  left: 90%;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2:hover {
+    color: white;
+  }
+
+  .button3{
+    background-color: #bd9d35;
+  border: solid;
+  color: none;
+  padding: 16px 32px;
+  position: absolute;
+  top: 10%;
+  
+
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button3:hover {
+    color: white;
+  }
 
 .rectangle3{
-    background-color: rgb(240, 137, 137);
-    height: 260px;
-    width: 450px;
-    position: fixed;
-    top: 50px;
-    right: 180px;
+    
+  background-color: rgb(236, 238, 178);
+  border: 1px rgb(27, 28, 27) solid;
+  height: auto;
+  width: 60vw;
+  display: fixed;
+  padding: 15px;
 }
 
-.rectangle4{
-    background-color: rgb(179, 165, 74);
-    height: 160px ;
-    width: 450px;
-    position: fixed;
-    bottom: 103px;
-    right: 180px;
 
-}
+
+.img img {
+    height: 400px;
+    width: auto;
+    border: 1px rgb(27, 28, 27) solid;
+    
+  }
+
+  #auto-complete {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  #auto-complete li {
+    background-color: azure;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #searchList {
+    z-index: 1;
+    position: relative;
+    top: 0;
+    right: 10%;
+    margin-top: -1.5%;
+  }
+  
+  #searchList li {
+    width: auto;
+    cursor: pointer;
+  }
+  #searchContainer {
+   background-color: white;
+    max-height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .details {
+    height: 300px;
+    width: auto;
+    color: rgb(232, 235, 238);
+    font-weight: bold;
+    overflow-y: auto;
+    padding-left: 15px;
+  }
+  
